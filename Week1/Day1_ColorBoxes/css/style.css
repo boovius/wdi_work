@@ -1,0 +1,55 @@
+.root {
+	width:600px;
+	background:#ddd;
+	padding:20px 40px;
+	position:relative;
+	margin:20px auto;
+}
+
+.root:after {
+	content:".";
+	display:block;
+	visibility:hidden;
+	clear:both;
+	height:0;
+}
+
+.left {
+	width:300px;
+	padding:10px 20px;
+	background:blue;
+}
+
+.left .l1, .l2, .l3, .r1, .r2, .r3 {
+	border:2px solid #000;
+	margin:10px 0;
+}
+
+.l1, .l2, .l3 {
+	height:50px;
+	background:red;
+	border-radius:20px;
+}
+
+.r1, .r2, .r3 {
+	position:absolute;
+	height:80px;
+	width:80px;
+}
+.r1 {
+	top:20px;
+	right:40px;
+	background:yellow;
+}
+.r2 {
+	top:80px;
+	right:100px;
+	background:green;
+}
+.r3 {
+	top:140px;
+	right:160px;
+	background:pink;
+}
+
+
